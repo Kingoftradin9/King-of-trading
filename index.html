@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King of Trading</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap');
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      direction: rtl;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 380px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .card {
+      position: relative;
+      background: url('https://imgur.com/iaChQMs.jpg') no-repeat center center;
+      background-size: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      overflow: hidden;
+      color: #222;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 0;
+      border-radius: 15px;
+    }
+
+    .card * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .identity-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .instructions-card ol {
+      margin: 0;
+      padding: 0 20px;
+      list-style-position: inside;
+      list-style-type: decimal;
+      line-height: 1.8;
+      font-size: 16px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .join-card {
+      text-align: center;
+    }
+
+    .join-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 12px;
+    }
+
+    .join-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 12px;
+    }
+
+    .join-desc {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+
+    .join-btn {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .join-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- كارت الهوية King of Trading بالصورة الجديدة -->
+    <div class="card identity-card">
+      <img src="https://imgur.com/hGT5TeE.jpg" alt="King of Trading">
+    </div>
+
+    <!-- كارت خطوات الانضمام -->
+    <div class="card instructions-card">
+      <ol>
+        <li>اضغط على النقاط الثلاث بالأعلى</li>
+        <li>اختر "فتح في المتصفح"</li>
+        <li>انضم مباشرة لقناة التليجرام</li>
+      </ol>
+    </div>
+
+    <!-- كارت الانضمام -->
+    <div class="card join-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+      <div class="join-title">انضم إلى <span style="color:#007bff;">King of Trading</span> على تيليجرام</div>
+      <div class="join-desc">
+        اضغط على الزر بالأسفل للانضمام والاستفادة من الفرص الحصرية والتوصيات القوية.
+      </div>
+      <a href="https://t.me/Kin9_0f_tradeing" class="join-btn">انضم الآن</a>
+    </div>
+
+  </div>
+</body>
+
+</html>
